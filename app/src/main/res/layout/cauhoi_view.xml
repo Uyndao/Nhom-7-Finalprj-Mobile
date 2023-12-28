@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FEF7FF"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewCauHoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Bức tranh nổi tiếng 'Mona Lisa' do nghệ sĩ nào sáng tác?"
+        android:textSize="18sp" />
+
+</LinearLayout>

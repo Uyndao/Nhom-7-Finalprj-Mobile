@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="gioi_thieu">"GoQuiz là ứng dụng di động độc đáo và thú vị được thiết kế để thách thức và giải trí người dùng mọi lứa tuổi.
+Với một bộ câu hỏi đa dạng từ nhiều lĩnh vực khác nhau như khoa học, văn hóa, nghệ thuật và nhiều hơn nữa, GoQuiz hứa hẹn mang lại trải nghiệm học thuật và giải trí đặc sắc.
+Bằng cách sử dụng GoQuiz, người dùng không chỉ có cơ hội kiểm tra kiến thức của mình mà còn trải nghiệm sự hứng thú và niềm vui từ việc tham gia các trò chơi đa dạng."
+Tải ngay để trải nghiệm sự kết hợp tuyệt vời giữa giáo dục và giải trí chỉ có tại GoQuiz!</string>
+    <string-array name="chude_textinput">
+        <item name="item1">Địa lý</item>
+        <item name="item2">Lịch sử</item>
+        <item name="item3">Khoa học</item>
+        <item name="item4">Nghệ thuật</item>
+    </string-array>
+</resources>

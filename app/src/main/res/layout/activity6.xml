@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F7F2FA">
+
+    <TextView
+        android:id="@+id/cauhoi6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:text="Vienna là thủ đô của nước nào?"
+        android:textAlignment="center"
+        />
+    
+    <Button
+        android:id="@+id/Dokho_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Khó"
+        android:textSize="18sp"
+        android:backgroundTint="#FF0000"/>
+
+    <TextView
+        android:id="@+id/luachon1_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="#FFFFFF"
+        android:text="A"
+        android:textSize="25sp"
+        android:gravity="start|center"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/luachon2_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="25sp"
+        android:text="A"
+        android:gravity="start|center"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/luachon3_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="25sp"
+        android:text="A"
+        android:gravity="start|center"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/luachon4_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="25sp"
+        android:text="A"
+        android:gravity="start|center"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/dapan_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:text="Đáp án đúng:"
+        android:textAlignment="center"
+        />
+
+
+
+</LinearLayout>
