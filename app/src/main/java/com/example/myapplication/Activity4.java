@@ -27,7 +27,7 @@ public class Activity4 extends AppCompatActivity {
         diemtext = findViewById(R.id.diem);
         diemtext.setText(Integer.toString(diem / (dokho +1)));
         hoanthanhbutton.setOnClickListener(v -> {
-            Intent it1 = new Intent(Activity4.this, Activity2.class);
+            Intent it1 = new Intent(Activity4.this, Activity1.class);
             it1.putExtra("Total Score", Integer.toString(diem));
             startActivity(it1);
             finish();

@@ -14,9 +14,12 @@ public class Activity1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity1);
+        Intent it1 = getIntent();
+        String totalscore = it1.getStringExtra("Total Score");
         startButton = findViewById(R.id.startButton);
         startButton.setOnClickListener(view -> {
             Intent it = new Intent(Activity1.this,Activity2.class);
+            it.putExtra("Total Score", totalscore);
             startActivity(it);
         });
     }
