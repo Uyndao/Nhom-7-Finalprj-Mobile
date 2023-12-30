@@ -28,6 +28,7 @@ public class Activity3 extends AppCompatActivity {
         Intent it = getIntent();
         String chude = it.getStringExtra("Chủ đề");
         int dokho = it.getIntExtra("Độ khó", 0);
+        int diemtong = it.getIntExtra("Total Score", 0);
         if (chude.equals("Địa lý")) {
             cauHoiVector = cauHoi.KhoiTaoDiaLy();
         }
@@ -87,6 +88,7 @@ public class Activity3 extends AppCompatActivity {
                 it2.putExtra("Chủ đề", chude);
                 it2.putExtra("Độ khó", dokho);
                 it2.putExtra("Điểm", diem);
+                it2.putExtra("Total Score", diemtong);
                 startActivity(it2);
                 finish();
             }

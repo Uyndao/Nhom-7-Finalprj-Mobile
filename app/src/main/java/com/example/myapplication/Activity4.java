@@ -20,15 +20,16 @@ public class Activity4 extends AppCompatActivity {
         String chude = it.getStringExtra("Chủ đề");
         int dokho = it.getIntExtra("Độ khó", 0);
         int diem = it.getIntExtra("Điểm", 0);
+        int diemtong = it.getIntExtra("Total Score", 0);
 
         hoanthanhbutton = findViewById(R.id.hoanthanh);
         choilaibutton = findViewById(R.id.choilai);
         chiasebutton = findViewById(R.id.chiase);
         diemtext = findViewById(R.id.diem);
-        diemtext.setText(Integer.toString(diem / (dokho +1)));
+        diemtext.setText(Integer.toString(diem / (dokho + 1)));
         hoanthanhbutton.setOnClickListener(v -> {
             Intent it1 = new Intent(Activity4.this, Activity1.class);
-            it1.putExtra("Total Score", Integer.toString(diem));
+            it1.putExtra("Total Score", diem + diemtong);
             startActivity(it1);
             finish();
         });
@@ -36,6 +37,7 @@ public class Activity4 extends AppCompatActivity {
             Intent it2 = new Intent(Activity4.this, Activity3.class);
             it2.putExtra("Chủ đề", chude);
             it2.putExtra("Độ khó", dokho);
+            it2.putExtra("Total Score", diem + diemtong);
             startActivity(it2);
             finish();
         });

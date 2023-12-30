@@ -21,18 +21,18 @@ public class Activity2 extends AppCompatActivity {
     ListView listViewChuDe;
     MaterialSwitch doKho;
     int dokho = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity2);
 
         Intent it1 = getIntent();
-        String totalscore = it1.getStringExtra("Total Score");
+        int diemtong = it1.getIntExtra("Total Score", 0);
         TextView ac2_score_view = findViewById(R.id.ac2_score);
-        if(totalscore != null)
-            if(totalscore.equals("1") || totalscore.equals("0")) ac2_score_view.setText(totalscore + " pt");
-            else ac2_score_view.setText(totalscore + " pts");
-        else ac2_score_view.setText("0 pt");
+        if (Integer.toString(diemtong).equals("1") || Integer.toString(diemtong).equals("0"))
+            ac2_score_view.setText(Integer.toString(diemtong) + " pt");
+        else ac2_score_view.setText(Integer.toString(diemtong) + " pts");
 
         //Khoi tao ListProduct
         listChuDe = new ArrayList<>();
@@ -60,6 +60,7 @@ public class Activity2 extends AppCompatActivity {
                 Intent it = new Intent(Activity2.this, Activity3.class);
                 it.putExtra("Chủ đề", chuDe.name);
                 it.putExtra("Độ khó", dokho);
+                it.putExtra("Total Score", diemtong);
                 startActivity(it);
                 finish();
             }
